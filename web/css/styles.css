@@ -1,0 +1,636 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500);
+@import url(https://fonts.googleapis.com/css?family=Dosis:400);
+/*======================================================
+=================Bootstap resets========================
+========================================================*/
+.h1, .h2, .h3, h1, h2, h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.form-control {
+  padding-left:15px;
+  font-size: 20px;
+  height: 62px;
+  font-weight: 400;
+  background-color: #fafafa;
+  color: #4f4f4f;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0) !important
+}
+.form-control:focus {
+    border-color: #ccc;
+    outline: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.form-group {
+  margin-bottom: 40px;
+}
+.btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {
+  outline-color: transparent;
+}
+a:focus, a:hover {
+    color: #f25a29;
+    text-decoration: underline;
+}
+a {
+    color: #f25a29;
+}
+.modal-content {
+  border:none;
+  border-top: 2px solid #f25a29;
+  border-radius:0;
+}
+.modal-header {
+  border:none;
+}
+/*======================================================
+=================Main===================================
+========================================================*/
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  overflow: hidden;
+  line-height: 1.3;
+  overflow-x: hidden;
+  overflow-y: auto;
+  color: #3a3a3a;
+}
+.main {
+  max-width: 640px;
+  margin: 0 auto;
+}
+.main-image {
+  background-image: url("../img/update-profile-banner.jpg");
+  background-repeat: no-repeat;
+  background-color: #fafafa;
+  background-size: cover;
+}
+.main-banner {
+  background-color: #324767;
+  padding-top: 60px;
+  padding-bottom: 15px;
+  margin: 0 auto;
+  width: 50%;
+  margin-bottom: 30px;
+  color: #ccced4;
+}
+.banner-text {
+  color: #ccced4;
+  width: 100%;
+  font-size: 14px;
+  padding-bottom: 15px;
+}
+.content-container {
+  max-width: 500px;
+  margin: 0 auto;
+}
+.logo-img {
+  margin: 60px auto 15px;
+  width: 114px;
+}
+.intro-text {
+  margin-bottom: 30px;
+  font-size: 16px;
+  font-weight: 500;
+}
+.name-label {
+  color: #9e9e9e;
+  font-size: 13px;
+  font-weight: normal;
+  padding-left: 15px;
+}
+.below-label-text {
+  color: #9e9e9e;
+  font-size: 13px;
+  font-weight: normal;
+  font-style: italic;
+  padding-left: 15px;
+}
+.comm-preferences {
+  color: #f25a29;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.info-icon {
+  font-size: 15px;
+  color: #9e9e9e;
+  padding-right: 15px;
+}
+.countdown-label {
+  color: #9e9e9e;
+  font-size: 13px;
+  font-weight: normal;
+}
+.input-label {
+  position: absolute;
+  color: #4f4f4f;
+  font-size: 20px;
+  font-weight: 500;
+  padding-left: 15px;
+  top: 48.21%;
+}
+.input-number {
+  padding-left:50px;
+}
+.verify-otp-btn{
+  width: 100%;
+}
+.check-input {
+  /*display: none;*/
+  position: absolute;
+  right: 15px;
+  bottom: 18px;
+  color: #f25a29;
+}
+.not-your-number {
+  float: right;
+  padding-right: 15px;
+}
+.otp-col > .otp-input{
+  margin-right: 14px;
+  width: 21%;
+  float: left;
+  text-align: center;
+}
+.login-modal-popup-incent {
+  padding: 30px 80px;
+}
+.login-modal-popup-incent .continue-btn {
+  padding: 12px 15px;
+}
+/* custom buttons*/
+.btn-send {
+  padding: 17.5px 22px;
+  color: #f25a29;
+  font-size: 18px;
+  font-weight: 500;
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+}
+.btn-send.focus, .btn-send:focus, .btn-send:hover {
+  color: #f25a29;
+}
+.send-otp-btn {
+  position: absolute;
+  right: 0;
+  bottom: 0px;
+}
+.connect-to-social {
+  width: 100%;
+  padding: 18px 15px;
+  text-align: left;
+  color: #4f4f4f;
+  background-color: #ececec;
+  font-size: 18px;
+  font-weight: 500;
+}
+.connect-to-social.focus, .connect-to-social:focus, .connect-to-social:hover {
+  color: #4f4f4f;
+}
+.continue-btn {
+  padding: 18px 15px;
+  width: 100%;
+  background-color:#f25a29;
+  color: #fff;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 1.2px;
+}
+.continue-btn.focus, .continue-btn:focus, .continue-btn:hover {
+  color: #fff;
+}
+input[type="checkbox"].custom-checkbox {
+  display: none;
+}
+input[type="checkbox"].custom-checkbox + label {
+  padding: 15px 16px;
+  width: 100%;
+  display: inline-block;
+}
+input[type="checkbox"].custom-checkbox + label {
+  position: relative;
+  background-color: #fafafa;
+  color: #9e9e9e;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
+  cursor: pointer;
+}
+input[type="checkbox"].custom-checkbox + label > i {
+ opacity: 0;
+
+}
+input[type="checkbox"].custom-checkbox {
+  color: transparent;
+}
+input[type="checkbox"].custom-checkbox:checked  {
+  text-shadow: none;
+  color: inherit;
+  border: 1px solid #324767;
+}
+input[type="checkbox"].custom-checkbox + label:active,
+input[type="checkbox"].custom-checkbox:checked + label:active {
+  border: 1px solid #324767;
+}
+input[type="checkbox"].custom-checkbox:checked + label, input[type="checkbox"].custom-checkbox:checked + label > i {
+  color: #fff;
+  background-color: #324767;
+  opacity: 1;
+}
+.radio-grp .radio-btn {
+  /*margin-bottom: 1px;*/
+  display: block;
+  /*width: 100%;*/
+  margin-bottom: 20px;
+}
+.radio-grp .radio-btn:last-of-type {
+  margin-right: 0;
+  margin-bottom: 0;
+}
+.radio-grp .radio-btn:nth-last-of-type(2){
+  margin-bottom: 0;
+}
+.radio-grp .radio-btn input {
+  display: none;
+}
+.preference-icon {
+  padding-left:  5px;
+  overflow:  auto;
+  color:  #9e9e9e;
+}
+.radio-grp .radio-btn input[type="radio"]:checked ~ label > .preference-icon {
+  color: #f25a29;
+  -webkit-animation: heart-ani 1s ease forwards;
+  animation: heart-ani 1s ease forwards;
+  -moz-transition: heart-ani 1s ease forwards;
+  -ms-transition: heart-ani 1s ease forwards;
+  -o-transition: heart-ani 1s ease forwards;
+}
+.radio-grp .radio-btn label {
+  font-size: 16px;
+  font-weight: 500;
+  display:block;
+  color: #4f4f4f;
+  padding: 15px 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.preferences-checkbox-subtext {
+  font-style: normal;
+  color: #9e9e9e;
+  font-size: 13px;
+  font-weight: normal;
+}
+.custom-radio {
+  position: relative;
+  height: 62px;
+  width: 100%;
+  margin: 10px auto 0;
+  background-color: #fafafa;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+.custom-radio-label {
+  border-right: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  margin: 0;
+  height: 100%;
+  position: relative;
+  z-index: 2;
+  float: left;
+  width: 50%;
+  line-height: 64px;
+  font-size: 18px;
+  color: #4f4f4f;
+  font-weight: 500;
+  text-align: center;
+  cursor: pointer;
+}
+.custom-radio-label:active {
+  font-weight: 500;
+}
+.custom-radio-label-off {
+  padding-left: 2px;
+}
+.custom-radio-label-on {
+  padding-right: 2px;
+}
+.custom-radio-input {
+  display: none;
+}
+.custom-radio-input:checked + .custom-radio-label {
+  height: 100%;
+  color: #f25a29;
+  font-weight: 500;
+  -webkit-transition: 0.15s ease-out;
+  -moz-transition: 0.15s ease-out;
+  -ms-transition: 0.15s ease-out;
+  -o-transition: 0.15s ease-out;
+  transition: 0.15s ease-out;
+}
+.custom-radio-input:checked + .custom-radio-label-on ~ .custom-radio-selection {
+  left: 50%;
+}
+.custom-radio-selection {
+  position: absolute;
+  z-index: 1;
+  top: 0px;
+  left: 1px;
+  display: block;
+  width: 50%;
+  height: 60px;
+  border-radius: 4px;
+  background-color: #f1f1f1;
+  -moz-transition: left 0.15s ease-out;
+  -ms-transition: left 0.15s ease-out;
+  -o-transition: left 0.15s ease-out;
+  transition: left 0.15s ease-out;
+}
+.update-arrow-icon {
+  -webkit-transform:rotate(-45deg);
+  -ms-transform:rotate(-45deg);
+  transform:rotate(-45deg);
+  -o-transition:rotate(-45deg);
+}
+.check-profile-btn {
+  padding: 25px 0;
+  width: 60%;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 1.3px;
+  text-transform: uppercase;
+}
+.check-profile-btn.focus, .check-profile-btn:focus, .check-profile-btn:hover {
+  color: #fff;
+}
+.btn-orange {
+  background-color: #f25a29;
+  color: #fff;
+}
+.btn-blue {
+  background-color: #0083c3;
+  color: #fff;
+}
+.loading-otp {
+  padding-right: 15px;
+}
+.forgot-password {
+  margin-top: 5px;
+}
+.forgot-password > a , .forgot-password > a:hover{
+    font-size: 12px;
+    color: #999999;
+    text-decoration: none !important;
+}
+.btn-social-login {
+    padding: 18px 15px;
+    color: #fff;
+    width: 100%;
+    text-align: left;
+
+}
+.btn-social-login , .btn-social-login:hover , .btn-social-login:active , .btn-social-login.active , .btn-social-login:focus {
+    color: #fff;
+}
+.btn-social-login > i {
+    font-size: 16px;
+    padding-left: 5px;
+    padding-right: 10px;
+    border-right: 1px solid rgba(255, 255, 255, 0.15);
+}
+.btn-text {
+    margin-left: 10px;
+}
+.btn-facebook {
+    background-color: #3b5998;
+}
+.btn-google {
+    background-color: #dd4b39;
+}
+/*footer*/
+.footer {
+  padding-bottom: 30px;
+}
+.footer-line {
+  height: 1px;
+  width: 70px;
+  background-color: #dedede;
+  margin: 60px auto;
+}
+.social-icons > span > a {
+  padding: 0 30px;
+}
+.facebook-icon , .facebook-icon:hover {
+  color: #3b5998;
+}
+.twitter-icon , .twitter-icon:hover {
+  color: #55acee;
+}
+.instagram-icon , .instagram-icon:hover {
+  color: #3badb4;
+}
+.footer-text {
+  font-size: 12px;
+  color: #424a50;
+  font-weight: 300;
+}
+.footer-discplaimer-text {
+  color: #ababab;
+  font-size: 11px;
+  font-weight: 300;
+}
+/*======================================================
+=================Defaults===============================
+========================================================*/
+.no-padding {
+  padding: 0;
+}
+.relative {
+  position: relative;
+}
+.hide-overflow {
+  overflow-x:hidden;
+}
+.text-left{
+  text-align: left;
+}
+/*fonts*/
+.font-dosis {
+  font-family: 'Dosis', sans-serif;
+}
+.font-Calibri {
+  font-family: 'Calibri', sans-serif;
+}
+.weight-normal {
+  font-weight: 400;
+}
+.weight-bold {
+  font-weight: 500;
+}
+/*spacing classes*/
+.mb-0{
+  margin-bottom: 0;
+}
+.mt-10 {
+  margin-top: 10px;
+}
+.mb-30 {
+  margin-bottom: 30px;
+}
+.mb-60 {
+  margin-bottom: 60px;
+}
+.pr-10{
+  padding-right:10px;
+}
+.pr-15{
+  padding-right:15px;
+}
+.pl-15{
+  padding-left: 15px;
+}
+.pl-10{
+  padding-left: 10px;
+}
+.padding-right-5 {
+  padding-right: 5px;
+  padding-left: 0;
+}
+.padding-left-5 {
+  padding-left: 5px;
+  padding-right: 0;
+}
+/*======================================================
+=================@media queries=========================
+========================================================*/
+@media only screen and (max-width: 480px) {
+
+  .content-container {
+    max-width: 100%;
+    padding: 0 7px;
+  }
+  .not-your-number {
+    font-size: 13px;
+  }
+  .intro-text {
+    font-size: 13px;
+  }
+  .input-number {
+    padding-left:40px;
+  }
+  .form-control {
+    padding-left:15px;
+    font-size: 13px;
+    height: 52px;
+    }
+  .input-number {
+    padding: 25px 12px 25px 40px;
+  }
+  .input-label {
+    font-size: 13px;
+    top: 54%;
+    }
+  .btn-send {
+    padding: 16px 4px;
+    font-size: 13px;
+    }
+  .name-label {
+    font-size: 12px;
+    }
+  .otp-col > .otp-input {
+    margin-right: 8px;
+    }
+  .footer-discplaimer-text {
+    font-size: 10px;
+    }
+  .connect-to-social {
+      font-size: 14px;
+    }
+  input[type="checkbox"].custom-checkbox + label {
+      font-size: 12px;
+    }
+  .custom-radio {
+      height: 52px;
+    }
+  .custom-radio-label {
+      font-size: 14px;
+      line-height: 54px;
+    }
+  .custom-radio-selection {
+      height: 50px;
+    }
+  .play-store-logo {
+      width: 120px;
+    }
+  .check-profile-btn {
+      padding: 20px 0;
+      width: 85%;
+      font-size: 16px;
+    }
+
+} /* end 480 st768 */
+
+/*======================================================
+=================animation keyframes====================
+========================================================*/
+@-webkit-keyframes heart-ani {
+  25% {
+    -webkit-transform:  scale(1.5);
+            transform:  scale(1.5);
+  }
+  75% {
+    -webkit-transform:  scale(1.25);
+            transform: scale(1.25);
+  }
+  50%,100% {
+    -webkit-transform:  scale(1);
+            transform:  scale(1);
+  }
+}
+@keyframes heart-ani {
+  25% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+  75% {
+    -webkit-transform: scale(1.25);
+            transform: scale(1.25);
+  }
+  50%,100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+/*======================================================
+=================browser exceptions=====================
+========================================================*/
+@-moz-document url-prefix() {
+  .btn {
+     white-space:normal;
+  }
+}
+
+input.ng-invalid.ng-touched.ng-dirty.ng-required.ng-error {
+ border: 1px solid red;
+ }
+
+a.resend-otp {
+  color: #9e9e9e;
+  font-size: 13px;
+  font-weight: normal;
+  padding-left: 15px;
+  cursor: pointer;
+}
+
+
+
+.error-label {
+    color: red !important;
+    font-size: 13px;
+    font-weight: normal;
+}

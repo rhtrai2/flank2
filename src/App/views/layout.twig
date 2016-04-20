@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en-us" ng-app="flank">
+    <head>
+        <meta charset="utf-8">
+        <title>Happilyunmarried - {% block title %}No Title{% endblock %}</title>
+	    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" />
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="{{ app.request.basePath }}/css/styles.css" type="text/css" />
+        <link rel="stylesheet" href="{{ app.request.basePath }}/css/animation.css" type="text/css" />
+        {% block head %}{% endblock %}
+        <link rel="shortcut icon" href="{{ app.request.basePath }}/favicon.ico" />
+    </head>
+    <body ng-controller="appCtrl" ng-cloak>
+        <div class="container">
+            <div class="col-sm-12 mainview-animation" ng-view></div>
+            <style>
+    p {
+        font-size: 10rem;
+    }
+</style>
+<div>
+    <p>This is a line</p>
+</div>
+        </div>
+
+        {% block content %}{% endblock %}
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0/angular.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0/angular-route.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular-animate.min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular-sanitize.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.13.4/ui-bootstrap-tpls.js"></script>
+		<!-- <script src="https://apis.google.com/js/platform.js" async defer></script> -->
+
+        <!-- custom scripts -->
+        <script src="{{ app.request.basePath }}/js/app.js"></script>
+        <script src="{{ app.request.basePath }}/js/controllers/appController.js"></script>
+        <script src="{{ app.request.basePath }}/js/controllers/incentiveController.js"></script>
+        <script src="{{ app.request.basePath }}/js/services/incentiveSevice.js"></script>
+        {% block closing_scripts %}{% endblock %}
+    </body>
+</html>
